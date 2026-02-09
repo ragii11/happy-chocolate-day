@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chocolate Delivery ❤️</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- ================= LOADING ================= -->
+<section id="loading-screen" class="screen">
+    <div class="center">
+        <h1 class="title">Chocolate Delivery</h1>
+        <p id="loading-text">Starting...</p>
+    </div>
+</section>
+
+
+<!-- ================= BOX ================= -->
+<section id="box-screen" class="screen hidden">
+    <div class="center">
+        <h2>Ta-da Special Delivery For You</h2>
+        <img src="box.png" id="box">
+        <p> Don't Be Shy, Touch The Box 🍫</p>
+
+        <audio id="music" loop preload="auto">
+            <source src="music.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+</section>
+
+
+<!-- ================= CHOCOLATES ================= -->
+<section id="choco-screen" class="screen hidden">
+    <div class="center">
+        <h2>Choose A Chocolate Cutie🍫</h2>
+
+        <div class="grid">
+
+            <div class="choco" data-msg="You make my days soft and comforting.">
+                <img src="milk.png">
+                <p>Milk</p>
+            </div>
+
+            <div class="choco" data-msg="You make my heart blush.">
+                <img src="strawberry.png">
+                <p>Strawberry</p>
+            </div>
+
+            <div class="choco" data-msg="You stick in my thoughts all day.">
+                <img src="caramel.png">
+                <p>Caramel</p>
+            </div>
+
+            <div class="choco" data-msg="Distance can't make my love bitter.">
+                <img src="dark.png">
+                <p>Dark</p>
+            </div>
+
+        </div>
+
+        <!-- Romantic line appears here -->
+        <p id="msg"></p>
+    </div>
+</section>
+
+
+<!-- ================= LOVE LETTER ================= -->
+<section id="love-screen" class="screen hidden">
+    <div class="center">
+        <h1 class="title">For Sweetheart ❤️</h1>
+        <p id="love-text"></p>
+        <button id="final-btn">I Have One Question...</button>
+    </div>
+</section>
+
+
+<!-- ================= FINAL QUESTION ================= -->
+<section id="question-screen" class="screen hidden">
+    <div class="center">
+        <h1 class="title">One Last Question...</h1>
+        <p style="margin-top:15px;font-size:1.2rem;">
+            Do You love Me More Than Chocolates haha, ? ❤️
+        </p>
+
+        <div class="btns">
+            <button id="yesBtn">Hell YES ❤️</button>
+            <button id="noBtn">NO(How Dare You) 🙈</button>
+        </div>
+    </div>
+</section>
+
+
+<!-- Chocolate rain container -->
+<div id="choco-rain"></div>
+
+<!-- Heart rain container -->
+<div id="heart-rain"></div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
